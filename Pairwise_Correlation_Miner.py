@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 # Import packages
 import pandas as pd
 from datetime import datetime
@@ -13,11 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score 
 from sklearn.preprocessing import PolynomialFeatures 
 
-
-# In[25]:
-
-
-'''
+''' EXAMPLE DATA 
 # Define the Dataframe
 df_to_use = df_base
 
@@ -45,9 +38,6 @@ feature_list = ['DIV_GAME',
 # Specify the file path where you want to save the CSV file
 export_file_path_string = r"C:\Users\theor\OneDrive\Desktop\ML_Miner\data.csv"
 '''
-
-
-# In[15]:
 
 
 # This sub function is used by the main function to check that the data submitted to the function has proper format
@@ -82,9 +72,6 @@ def valid_data_checker(feature_df, target_df):
 
     # Return the continue value
     return valid_data_check
-
-
-# In[16]:
 
 
 # M Test for linear regression 
@@ -166,8 +153,6 @@ def m_test_linear_regression(slope, intercept, feature_df, target_df):
 #m_test_linear_regression(slope, intercept, f_df, t_df) 
 
 
-# In[17]:
-
 
 # Function to execute linear regression analysis 
 
@@ -231,14 +216,6 @@ def execute_linear_regression(feature_df, target_df):
 #print(feature_df)
 #print(target_df)
 
-
-# In[ ]:
-
-
-
-
-
-# In[18]:
 
 
 # M Test for 2 degree polynomial regression 
@@ -321,9 +298,6 @@ def m_test_polynomial_2_regression(coefficient1, coefficient2, intercept, featur
 #print(output)
 
 
-# In[19]:
-
-
 # Function to execute 2 degree polynomial regression analysis 
 
 def execute_polynomial_regression(feature_df, target_df):
@@ -401,15 +375,6 @@ def execute_polynomial_regression(feature_df, target_df):
 #print(target_df)
 
 
-# In[ ]:
-
-
-
-
-
-# In[20]:
-
-
 # Autobucket and Execute T Test 
 # The autobucket T test automatically separates the target data into binary low vs high buckets. The threshold is mean(mean, median). Then it runs a Welches t test to asses whether the feature values from the low bucket are different than the feature values from the high bucket. 
 # Note: If your data is already in binary 0/1 format, this should keep them in the same binary buckets (unless you only have 1 represented, of course). 
@@ -461,8 +426,6 @@ def autobucket_t_test(feature_df, target_df):
 
 #autobucket_t_test(feature_df, target_df)
 
-
-# In[32]:
 
 
 # This is the main function. You feed it a dataframe with all of your data, a list of the columns you want to treat as features, a list of columns to treat as targets and the location where you want to export the results to. 
@@ -577,22 +540,3 @@ def execute_feature_target_pair_analysis(df_to_use, feature_list, target_list, e
 
 # Execute the function 
 execute_feature_target_pair_analysis(df_to_use, feature_list, target_list, export_file_path_string) 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
