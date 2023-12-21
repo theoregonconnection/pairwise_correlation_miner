@@ -531,6 +531,9 @@ def execute_feature_target_pair_analysis(df_to_use, feature_list, target_list, e
                 # Export Data 
                 # Export the DataFrame to CSV
         dataloader_df.to_csv(export_file_path_string, index=False)
+
+        # Return the results in the dataloader_df
+        return dataloader_df
         print(f"Processing complete and results exported to: {export_file_path_string}")
     
     except ExceptionType as e:
