@@ -20,7 +20,7 @@ The `Pairwise_Correlation_Miner` package provides the `execute_feature_target_pa
 -	dataloader_df: The results of the analysis in a dataframe
 -	Exports a CSV file to the path and file you define when submitting the function. 
 
-### Example
+## Example
 ```python
 # Example usage of the function
 import pairwise_correlation_miner as pcm
@@ -40,6 +40,6 @@ The function loops through all of the possible feature-target pairs and performs
 3.	Autobucketed Welches t Test: Buckets data points for binary and non-binary targets to perform a t-test.
 The m-test is a way to generate a p value for the probability that a given feature predicts a target, baed on a regression equation. For each data point, we calculate an estimate of the probability that the datapoint is as close to the regression line as it actually is, and the probability that it is as close to the null hypothesis line as it actually is. Once we have these 2 probability values for each datapoint, we run a t test to compare whether the prediction probabilities are different than the null probabilities. The null hypothesis line is set at y = (target mean + target median) / 2. 
 
-#License 
+## License 
 This project is licensed under the MIT License.
 
