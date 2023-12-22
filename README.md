@@ -7,6 +7,8 @@ _Last Update: 12/21/23_
 The `Pairwise_Correlation_Miner` package provides the `execute_feature_target_pair_analysis` function, designed to analyze statistical relationships between multiple features and targets in a dataframe, outputting the results in CSV format.
 
 ## Installation
+Available as a package at PyPi.org. https://pypi.org/project/pairwise-correlation-miner/. 
+Install via pip: pip install pairwise-correlation-miner
 
 ## Function Usage
 `execute_feature_target_pair_analysis(dataframe, feature_list, target_list, export_file_path)`
