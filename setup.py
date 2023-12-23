@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name='pairwise_correlation_miner',
-    version='0.1',
+    version='0.2',
     packages=find_packages(),
     description='A python function to mine pairwise correlations from a dataframe with many features and targets. Exports the results to a CSV.',
     long_description=long_description,
