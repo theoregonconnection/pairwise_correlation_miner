@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pairwise_correlation_miner/Pairwise_Correlation_Miner.py
+pairwise_correlation_miner/__init__.py
+pairwise_correlation_miner.egg-info/PKG-INFO
+pairwise_correlation_miner.egg-info/SOURCES.txt
+pairwise_correlation_miner.egg-info/dependency_links.txt
+pairwise_correlation_miner.egg-info/requires.txt
+pairwise_correlation_miner.egg-info/top_level.txt
