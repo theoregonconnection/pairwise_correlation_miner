@@ -16,8 +16,7 @@ setup(
     install_requires=[
         'pandas>=1.0.0',
         'scipy>=1.5.0',
-        'scikit-learn>=0.23.0',
-        # 'datetime>=4.3', # This might not be necessary
+        'scikit-learn>=0.23.0' 
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
